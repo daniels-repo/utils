@@ -1,0 +1,88 @@
+Windows Registry Editor Version 5.00
+
+; -----------------------------
+; FILE EXPLORER BEHAVIOR RESET
+; -----------------------------
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+
+"UseCompactMode"=dword:00000000
+"NavPaneExpandToCurrentFolder"=dword:00000000
+"HideFileExt"=dword:00000001
+"Hidden"=dword:00000002
+"ShowSuperHidden"=dword:00000000
+"LaunchTo"=dword:00000002
+"ShowSyncProviderNotifications"=dword:00000001
+
+
+; -----------------------------
+; QUICK ACCESS RESET
+; -----------------------------
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+
+"ShowRecent"=dword:00000001
+"ShowFrequent"=dword:00000001
+
+
+; -----------------------------
+; TASKBAR RESET
+; -----------------------------
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+
+"TaskbarSi"=dword:00000001
+"TaskbarGlomLevel"=-
+
+
+; -----------------------------
+; TASKBAR SEARCH RESET
+; -----------------------------
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+
+"SearchboxTaskbarMode"=dword:00000001
+
+
+; -----------------------------
+; REMOVE CLASSIC CONTEXT MENU HACK
+; -----------------------------
+
+[-HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}]
+
+
+Windows Registry Editor Version 5.00
+
+; -----------------------------
+; TASKBAR RESET
+; -----------------------------
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+
+; Taskbar alignment: center (default)
+"TaskbarAl"=dword:00000001
+
+; Widgets button: on
+"TaskbarDa"=dword:00000001
+
+; Task View button: on
+"ShowTaskViewButton"=dword:00000001
+
+
+; -----------------------------
+; TASKBAR SEARCH HOVER RESET
+; -----------------------------
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Feeds\DSB]
+
+; Show recent searches on hover
+"OpenOnHover"=dword:00000001
+
+
+; -----------------------------
+; LEGACY WINDOW ANIMATION RESET
+; -----------------------------
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"MinAnimate"="1"
+
